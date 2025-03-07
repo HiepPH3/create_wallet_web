@@ -28,7 +28,7 @@ export default function Home() {
     return resultQuery
   }, [searchParams]);
 
-  console.log(paramsQuery)
+  console.log("paramsQuery", paramsQuery)
 
   const createWalletHandle = async () => {
     setLoading(true);
