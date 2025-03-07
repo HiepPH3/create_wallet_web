@@ -72,6 +72,12 @@ export default function Home() {
     }
   }, []);
 
+  useEffect(() => {
+    if (searchParams.get("clientId")) {
+      setsetCreateWallet(true)
+    }
+  }, [searchParams])
+
   return (
     <div className="min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <div className="mt-10">User ID: {userCalbee}</div>
